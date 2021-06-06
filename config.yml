@@ -1,0 +1,16 @@
+title: _posts/0000-01-02-YOUR-USERNAME.md
+description: The users podts
+template:
+  repo: _posts0000-01-02-your-username.md-template
+  name: _posts0000-01-02-your-username.md
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
